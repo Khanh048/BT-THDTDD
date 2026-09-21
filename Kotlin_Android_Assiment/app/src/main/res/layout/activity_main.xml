@@ -104,6 +104,20 @@
                     android:textColor="@color/profile_text_primary"
                     android:textSize="16sp" />
 
+                <TextView
+                    android:id="@+id/tvExtensionStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/bg_status_badge"
+                    android:paddingStart="16dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/profile_background"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
