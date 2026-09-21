@@ -17,14 +17,12 @@ class MainActivity : AppCompatActivity() {
             nganh = "Công nghệ thông tin"
         )
 
-        val tvStudentName = findViewById<TextView>(R.id.tvStudentName)
-        val tvStudentID = findViewById<TextView>(R.id.tvStudentID)
-        val tvClass = findViewById<TextView>(R.id.tvClass)
-        val tvMajor = findViewById<TextView>(R.id.tvMajor)
-
-        tvStudentName.text = "Họ và tên: ${svMe.hoTen}"
-        tvStudentID.text = "MSSV: ${svMe.mssv}"
-        tvClass.text = "Lớp: ${svMe.lop}"
-        tvMajor.text = "Ngành: ${svMe.nganh}"
+        findViewById<TextView>(R.id.tvStudentName).text = svMe.hoTen
+        findViewById<TextView>(R.id.tvStudentID).text =
+            getString(R.string.student_id_format, svMe.mssv)
+        findViewById<TextView>(R.id.tvClass).text =
+            getString(R.string.class_format, svMe.lop)
+        findViewById<TextView>(R.id.tvMajor).text =
+            getString(R.string.major_format, svMe.nganh)
     }
 }

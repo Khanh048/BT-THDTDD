@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Kotlin_Android_Assiment</string>
+    <string name="app_name">Student Card</string>
+    <string name="profile_title">PROFILE</string>
+    <string name="student_card_title">Thẻ sinh viên</string>
+    <string name="avatar_content_description">Avatar mặc định của sinh viên</string>
+    <string name="student_id_format">MSSV: %1$s</string>
+    <string name="class_format">Lớp: %1$s</string>
+    <string name="major_format">Ngành: %1$s</string>
 </resources>

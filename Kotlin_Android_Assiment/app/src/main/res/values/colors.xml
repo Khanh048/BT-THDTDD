@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="profile_background">#0B1622</color>
+    <color name="profile_surface">#172738</color>
+    <color name="profile_surface_variant">#203448</color>
+    <color name="profile_accent">#45D483</color>
+    <color name="profile_accent_dark">#1F8F57</color>
+    <color name="profile_text_primary">#F5F8FA</color>
+    <color name="profile_text_secondary">#AEBBC7</color>
+    <color name="profile_stroke">#30485D</color>
 </resources>
