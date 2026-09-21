@@ -1,54 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center_horizontal">
+    android:background="@color/profile_background"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="THÔNG TIN SINH VIÊN"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="#1976D2"
-        android:layout_marginBottom="24dp" />
-
-    <!-- Họ và tên -->
-    <TextView
-        android:id="@+id/tvStudentName"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Họ và tên: Nguyễn Văn A"
-        android:textSize="18sp"
-        android:layout_marginBottom="12dp" />
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="32dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="32dp">
 
-    <!-- Mã số sinh viên -->
-    <TextView
-        android:id="@+id/tvStudentID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MSSV: SV123456"
-        android:textSize="18sp"
-        android:layout_marginBottom="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_title"
+            android:textColor="@color/profile_text_secondary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-    <!-- Lớp -->
-    <TextView
-        android:id="@+id/tvClass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lớp: CNTT K65"
-        android:textSize="18sp"
-        android:layout_marginBottom="12dp" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="@color/profile_surface"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/profile_stroke"
+            app:strokeWidth="1dp">
 
-    <!-- Chuyên ngành -->
-    <TextView
-        android:id="@+id/tvMajor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ngành: Lập trình Android"
-        android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="24dp">
 
-</LinearLayout>
+                <ImageView
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/bg_avatar"
+                    android:contentDescription="@string/avatar_content_description"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:letterSpacing="0.08"
+                    android:text="@string/student_card_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/profile_accent"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStudentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/profile_text_primary"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStudentID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/profile_text_secondary"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/profile_stroke" />
+
+                <TextView
+                    android:id="@+id/tvClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_info_row"
+                    android:padding="14dp"
+                    android:textColor="@color/profile_text_primary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvMajor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_info_row"
+                    android:padding="14dp"
+                    android:textColor="@color/profile_text_primary"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

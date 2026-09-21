@@ -1,8 +1,15 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Kotlin_Android_Assiment" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Kotlin_Android_Assiment" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/profile_accent</item>
+        <item name="colorOnPrimary">@color/profile_background</item>
+        <item name="colorSurface">@color/profile_surface</item>
+        <item name="android:colorAccent">@color/profile_accent</item>
+        <item name="android:windowBackground">@color/profile_background</item>
+        <item name="android:statusBarColor">@color/profile_background</item>
+        <item name="android:navigationBarColor">@color/profile_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
     </style>
 
     <style name="Theme.Kotlin_Android_Assiment" parent="Base.Theme.Kotlin_Android_Assiment" />
