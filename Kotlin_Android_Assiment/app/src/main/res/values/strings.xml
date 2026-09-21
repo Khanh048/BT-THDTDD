@@ -6,4 +6,6 @@
     <string name="student_id_format">MSSV: %1$s</string>
     <string name="class_format">Lớp: %1$s</string>
     <string name="major_format">Ngành: %1$s</string>
+    <string name="extension_status">✓ Kotlin Extension đang hoạt động</string>
+    <string name="value_not_available">Chưa cập nhật</string>
 </resources>

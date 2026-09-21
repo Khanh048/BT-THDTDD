@@ -17,12 +17,14 @@ class MainActivity : AppCompatActivity() {
             nganh = "Công nghệ thông tin"
         )
 
-        findViewById<TextView>(R.id.tvStudentName).text = svMe.hoTen
-        findViewById<TextView>(R.id.tvStudentID).text =
-            getString(R.string.student_id_format, svMe.mssv)
-        findViewById<TextView>(R.id.tvClass).text =
-            getString(R.string.class_format, svMe.lop)
-        findViewById<TextView>(R.id.tvMajor).text =
-            getString(R.string.major_format, svMe.nganh)
+        findViewById<TextView>(R.id.tvStudentName).setStudentValue(svMe.hoTen)
+        findViewById<TextView>(R.id.tvStudentID)
+            .setStudentField(R.string.student_id_format, svMe.mssv)
+        findViewById<TextView>(R.id.tvClass)
+            .setStudentField(R.string.class_format, svMe.lop)
+        findViewById<TextView>(R.id.tvMajor)
+            .setStudentField(R.string.major_format, svMe.nganh)
+        findViewById<TextView>(R.id.tvExtensionStatus)
+            .setStudentValue(getString(R.string.extension_status))
     }
 }
